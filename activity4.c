@@ -1,3 +1,7 @@
+/*
+* Kelly, Tu, Alharath 
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -32,25 +36,37 @@ void print_all_pos_bytes() {
     
     // String variable to contain binary string
     char *bin_str; 
-    bin_str = &uint_to_bin_str(i);
     printf("\nUNSIGNED CHARS IN HEX AND BINARY\n\n");      // a header line
 
     i = 0x00;
-    while (1) {  // while true
+    // while (1) {  // while true
+    //     // TODO: call conversion function to make string rep for binary
+    //     bin_str = uint_to_bin_str(i);
+
+    // 	// TODO: add to this print statement to print both hex and binary
+	//     printf("Decimal: %3hhu | Hex: %3x | Binary: %s\n", i, i, bin_str);
+
+    // 	// We need this to manage memory--remember that each memory allocation
+    // 	// requires a matching free()!
+    // 	free(bin_str);
+
+    //     // Stops the loop
+    //    	if (i == UCHAR_MAX)
+    //         break;
+
+	//     i++;
+    // }
+
+   for (int i = 0; i < 266; i++) {  // for true
         // TODO: call conversion function to make string rep for binary
+        bin_str = uint_to_bin_str(i);
         
     	// TODO: add to this print statement to print both hex and binary
-	    printf("Decimal: %3hhu | Hex: %x | Binary: %s", i, i, bin_str);
+	    printf("Decimal: %3hhu | Hex: %3x | Binary: %s\n", i, i, bin_str);
 
     	// We need this to manage memory--remember that each memory allocation
     	// requires a matching free()!
     	free(bin_str);
-
-        // Stops the loop
-       	if (i == UCHAR_MAX)
-            break;
-
-	    i++;
     }
 }
 
