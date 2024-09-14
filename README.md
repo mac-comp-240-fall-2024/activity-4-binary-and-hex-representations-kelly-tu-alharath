@@ -1,6 +1,6 @@
 # Activity 4: Binary and Hex Representations
 
-## Put Names Here
+## Kelly, Tu, Alharath
 Folder: `activities_bin_hex`
 
 This is an introduction to:
